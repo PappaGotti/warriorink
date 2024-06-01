@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warrior Ink</title>
+    <title>Warrior Ink - Apparel for the Fight Against Oppression</title>
+    <meta name="description" content="Warrior Ink offers unique and stylish apparel supporting the fight for Palestine's freedom and the fight against oppression worldwide. Stand with us and make a statement.">
+    <meta name="keywords" content="Warrior Ink, apparel, Palestine, freedom, anti-oppression, stylish clothing, high-quality clothing, fashion, unique apparel">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&display=swap">
+    
+    <!-- Open Graph Metadata for Social Media -->
+    <meta property="og:title" content="Warrior Ink - Apparel for the Fight Against Oppression">
+    <meta property="og:description" content="Warrior Ink offers unique and stylish apparel supporting the fight for Palestine's freedom and the fight against oppression worldwide. Stand with us and make a statement.">
+    <meta property="og:image" content="https://warriorink.co/path/to/logo.png"> <!-- Replace with your actual image URL -->
+    <meta property="og:url" content="https://warrior-ink.square.site/"> <!-- Your actual shop URL -->
+    <meta property="og:type" content="website">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Warrior Ink",
+      "url": "https://warrior-ink.square.site/",
+      "logo": "https://warriorink.co/path/to/logo.png", <!-- Replace with your actual logo URL -->
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61559825152419",
+        "https://www.instagram.com/warriorink_"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@warriorink.co",
+        "contactType": "Customer Service"
+      }
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -26,7 +56,7 @@
     <section id="home">
         <div class="container">
             <h2>Welcome to Warrior Ink</h2>
-            <p>اللَّهُمَّ أَنْقِذْ فِلَسْطِينَ وَأَهْلَهَا مِنَ الظُّلْمِ وَالاضْطِهَادِ، وَانْصُرْ كُلَّ مَنْ يُنَاضِلُ مِنْ أَجْلِ الحُرِّيَّةِ فِي كُلِّ مَكَانٍ</p>
+            <p class="arabic-text">اللَّهُمَّ أَنْقِذْ فِلَسْطِين وَأَهْلَهَا مِنَ الظُّلْمِ وَالاضْطِهَادِ، وَانْصُرْ كُلَّ مَنْ يُنَاضِلُ مِنْ أَجْلِ الحُرِّيَّةِ فِي كُلِّ مَكَانٍ</p>
             <a href="https://warrior-ink.square.site/s/shop" class="shop-button">SHOP</a>
         </div>
     </section>
@@ -34,22 +64,16 @@
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Warrior Ink is dedicated to providing high-quality, fashionable clothing for warriors of all walks of life.</p>
+            <p>Warrior Ink is dedicated to providing high-quality, fashionable clothing for warriors of all walks of life. Our apparel supports the fight for Palestine's freedom and the fight against oppression worldwide.</p>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+            <a href="mailto:support@warriorink.co" class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
     </section>
 
@@ -57,10 +81,8 @@
         <div class="container">
             <p>&copy; 2024 Warrior Ink. All rights reserved.</p>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61559825152419" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/warriorink_" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>

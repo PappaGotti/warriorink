@@ -83,41 +83,24 @@ section p {
     background-color: #e63900;
 }
 
-/* Contact Form Styles */
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+.arabic-text {
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5em;
 }
 
-#contact-form label {
-    display: block;
-    margin: 10px 0 5px;
+/* Contact Section */
+.contact-icon {
+    color: #333;
+    font-size: 3em; /* Increased size */
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-#contact-form input, #contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact-form button {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#contact-form button:hover {
-    background-color: #555;
+.contact-icon:hover {
+    color: #ff4500;
 }
 
 /* Footer Styles */
