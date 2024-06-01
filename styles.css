@@ -1,14 +1,27 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
@@ -25,65 +38,103 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
 section {
-    padding: 20px;
+    padding: 60px 0;
     text-align: center;
 }
 
-.product {
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
+section h2 {
+    margin: 0 0 20px;
+    font-size: 2.5em;
 }
 
-form {
+section p {
+    font-size: 1.2em;
+    margin: 0 0 20px;
+}
+
+/* Home Section */
+#home {
+    background: #2c3e50; /* Dark grayish blue */
+    color: #fff;
+    padding: 100px 0;
+}
+
+#home .shop-button {
     display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#home .shop-button:hover {
+    background-color: #e63900;
+}
+
+/* Contact Form Styles */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
     text-align: left;
 }
 
-form label {
+#contact-form label {
     display: block;
     margin: 10px 0 5px;
 }
 
-form input, form textarea {
+#contact-form input, #contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px 0 10px;
-    border: 1px solid #ddd;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.shop-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 20px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.shop-button:hover {
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
     background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer .social-icons a:hover {
+    color: #ff4500;
 }
