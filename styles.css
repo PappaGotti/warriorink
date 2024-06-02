@@ -11,6 +11,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* Header Styles */
@@ -21,8 +22,14 @@ header {
     text-align: center;
 }
 
+header .logo {
+    max-height: 150px; /* Adjust the size as needed */
+    margin-bottom: 1.5px;
+}
+
 header h1 {
     margin: 0;
+    display: none; /* Hide the company name */
 }
 
 nav ul {
