@@ -1,10 +1,34 @@
-// Disable right-click on the entire document
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
-// Contact form submission alert
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for contacting us, ' + document.getElementById('name').value + '!');
+// Scroll-to-Top Button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}
+
+scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Disable right-click
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
 });
