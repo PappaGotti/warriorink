@@ -11,6 +11,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center; /* Centering text */
 }
 
 /* Announcement Bar Styles */
@@ -32,11 +33,33 @@ header {
     color: #fff;
     padding: 15px 0;
     text-align: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header .logo {
     max-width: 150px; /* Adjust the size as needed */
-    margin-bottom: 15px;
+}
+
+header .shop-button {
+    background-color: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .shop-button:hover {
+    background-color: #e63900;
 }
 
 nav ul {
@@ -73,6 +96,7 @@ nav ul li a:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    right: 0;
 }
 
 .dropdown-content a {
@@ -88,6 +112,14 @@ nav ul li a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dropdown .dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* Section Styles */
@@ -111,21 +143,6 @@ section p {
     background: #2c3e50; /* Dark grayish blue */
     color: #fff;
     padding: 100px 0;
-}
-
-#home .shop-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #ff4500;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#home .shop-button:hover {
-    background-color: #e63900;
 }
 
 .arabic-text {
@@ -177,8 +194,29 @@ footer {
     text-align: center;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
 footer .social-icons {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 footer .social-icons a {
@@ -193,20 +231,18 @@ footer .social-icons a:hover {
     color: #ff4500;
 }
 
-footer .footer-links {
-    text-align: right;
-    position: relative;
-    bottom: 10px;
-    right: 10px;
+.footer-links {
+    display: flex;
+    flex-direction: column;
 }
 
-footer .footer-links a {
+.footer-links a {
     color: #fff;
     text-decoration: none;
-    display: block;
+    margin-bottom: 5px;
 }
 
-footer .footer-links a:hover {
+.footer-links a:hover {
     text-decoration: underline;
 }
 
