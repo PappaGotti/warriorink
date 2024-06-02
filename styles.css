@@ -11,7 +11,6 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
 }
 
 /* Header Styles */
@@ -23,13 +22,8 @@ header {
 }
 
 header .logo {
-    max-height: 150px; /* Adjust the size as needed */
-    margin-bottom: 1.5px;
-}
-
-header h1 {
-    margin: 0;
-    display: none; /* Hide the company name */
+    max-width: 150px; /* Adjust the size as needed */
+    margin-bottom: 15px;
 }
 
 nav ul {
@@ -51,6 +45,36 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Section Styles */
@@ -140,6 +164,10 @@ footer {
     text-align: center;
 }
 
+footer .social-icons {
+    margin-bottom: 20px;
+}
+
 footer .social-icons a {
     color: #fff;
     margin: 0 10px;
@@ -150,6 +178,23 @@ footer .social-icons a {
 
 footer .social-icons a:hover {
     color: #ff4500;
+}
+
+footer .footer-links {
+    text-align: right;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
 }
 
 /* Scroll-to-Top Button */
