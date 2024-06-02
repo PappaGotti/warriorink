@@ -32,3 +32,18 @@ scrollToTopBtn.addEventListener('click', function() {
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
 });
+
+// Announcement Bar
+const announcementText = document.getElementById('announcement-text');
+const announcements = [
+    'FREE U.S. SHIPPING ON ORDERS $75+',
+    'EVERY PURCHASE HELPS THE FIGHT FOR FREEDOM!'
+];
+let announcementIndex = 0;
+
+function changeAnnouncement() {
+    announcementText.textContent = announcements[announcementIndex];
+    announcementIndex = (announcementIndex + 1) % announcements.length;
+}
+
+setInterval(changeAnnouncement, 5000); // Change text every 5 seconds

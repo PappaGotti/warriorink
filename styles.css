@@ -13,6 +13,19 @@ body {
     margin: 0 auto;
 }
 
+/* Announcement Bar Styles */
+.announcement-bar {
+    background-color: #ff4500; /* Same color as the shop button */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+#announcement-bar p {
+    margin: 0;
+}
+
 /* Header Styles */
 header {
     background: #333;
