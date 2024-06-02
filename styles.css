@@ -1,9 +1,10 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
@@ -88,15 +89,31 @@ section p {
     font-weight: 700;
     font-style: italic;
     font-size: 1.5em;
+    color: #ff4500; /* Same orange as the shop button */
+}
+
+.transliteration {
+    font-style: italic;
+}
+
+.translation {
+    font-size: 1em;
 }
 
 /* Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact-icon {
     color: #333;
     font-size: 3em; /* Increased size */
     text-decoration: none;
     display: inline-block;
     margin-top: 20px;
+    transition: color 0.3s;
 }
 
 .contact-icon:hover {
@@ -116,6 +133,7 @@ footer .social-icons a {
     margin: 0 10px;
     text-decoration: none;
     font-size: 1.2em;
+    transition: color 0.3s;
 }
 
 footer .social-icons a:hover {
