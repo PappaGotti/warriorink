@@ -47,3 +47,8 @@ function changeAnnouncement() {
 }
 
 setInterval(changeAnnouncement, 5000); // Change text every 5 seconds
+
+// Redirect after 3 seconds
+setTimeout(function() {
+    window.location.href = "https://warrior-ink.square.site/";
+}, 3000);
