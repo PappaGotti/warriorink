@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Warrior Ink</title>
+    <meta name="description" content="Warrior Ink's terms of service outline the rules and regulations for using our website and services.">
+    <meta name="keywords" content="Warrior Ink, terms of service, user agreement, legal">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Warrior Ink</h1>
+        <div class="header-container">
+            <img src="https://warriorink.co/logo.png" alt="Warrior Ink Logo" class="logo">
+            <a href="https://warrior-ink.square.site/s/shop" class="shop-button">SHOP</a>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms of Service</a></li>
+                <ul class="burger-menu">
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-bars"></i></a>
+                        <div class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="privacy.html">Privacy Policy</a>
+                            <a href="terms.html">Terms of Service</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -26,7 +36,7 @@
         <div class="container">
             <h2>Terms of Service</h2>
             <p><strong>Account Registration</strong><br>
-            You must register for an account to access certain features of Warrior Ink's services. You are responsible for maintaining confidentiality of your login credentials.</p>
+            You must register for an account to access certain features of Warrior Ink's services. You are responsible for maintaining the confidentiality of your login credentials.</p>
 
             <p><strong>Acceptable Use</strong><br>
             You agree to use Warrior Ink's services for lawful purposes only. Prohibited conduct includes harassment, intellectual property infringement, distributing malware, and unauthorized commercial activities.</p>
@@ -48,16 +58,35 @@
         </div>
     </section>
 
-    <footer>
+    <section id="contact">
         <div class="container">
-            <p>&copy; 2024 Warrior Ink. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <h2>Contact Us</h2>
+            <a href="mailto:support@warriorink.co" class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 Warrior Ink. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61559825152419" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/warriorink_" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
